@@ -1,27 +1,26 @@
 
 <div class = "has-text-centered">
-  <section class="hero is-primary">
-      <div class="hero-body">
-          <div class="container">
-              <h1 class="title">
-                  Edit Code
-              </h1>
-          </div>
-      </div>
-  </section>
-  <div class = "container">
-      <div class="table-container" >
-        <table class="table is-striped">
-        <br>
-          <%= render 'form', code: @code %>
-        </table>
-      </div>
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Edit Code
+                </h1>
+            </div>
+        </div>
+    </section>
+    
+    <div class = "container">
 
-      <button class="button is-info is-outlined">
+        <%= render 'form', code: @code %>
+        
+        <button class="button is-info is-outlined">
           <%= link_to 'Show', @code %>
-      </button>
-      <button class="button is-info is-outlined">
-          <%= link_to "Home", root_path %>
-      </button>
-  </div>
+        </button>
+        <button class="button is-info is-outlined">
+            <%= link_to "Home", root_path %>
+        </button>
+    </div>
 </div>
+
+
