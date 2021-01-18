@@ -1,0 +1,42 @@
+<div class = "has-text-centered">
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Details
+                </h1>
+            </div>
+        </div>
+    </section>
+    <div class = "container">
+        <p>
+        <strong>Text:</strong>
+            <%= @code.student_id %>
+        </p>
+        <strong>Text:</strong>
+            <%= @code.assignment_name %>
+        </p>
+        
+        <!--show text within file-->
+        
+        <%# <%= link_to "View File", @code.file%> %>
+        <br>
+        
+        <!--cdata_section(File.read(@filename)) %>-->
+        <br>
+        
+        <!-- render file: "#{Rails.root}/storage/1j/wc/1jwcp2wpkwgdsmlnki80m6mjdq1y", layout: false %>-->
+        
+        <%# Article_Path: <%= @code.file %> %>
+        
+        <%# <pre><%= @text %></pre> %>
+
+        <br>
+        <button class="button is-info is-outlined">
+            <%= link_to "Home", codes_path %>
+        </button>
+        <button class="button is-info is-outlined">
+            <%= link_to 'Edit', edit_code_path(@code) %>
+        </button>
+    </div>
+</div>
